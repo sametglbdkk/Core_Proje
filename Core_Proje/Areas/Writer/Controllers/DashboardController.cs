@@ -65,6 +65,7 @@ namespace Core_Proje.Areas.Writer.Controllers
             ViewBag.v3 = c.Users.Count();
             ViewBag.v4 = c.Skills.Count();
 
+
             return View();
         }
     }

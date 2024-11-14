@@ -8,12 +8,16 @@ namespace Core_Proje.Areas.Writer.Models
 {
     public class UserLoginViewModel
     {
-        [Display(Name ="Kullanıcı Adı")]
-        [Required(ErrorMessage ="Kullanıcı Adını giriniz...!")]
+        [Display(Name = "Kullanıcı Adı")]
+        [Required(ErrorMessage = "Kullanıcı Adını giriniz...!")]
         public string Username { get; set; }
 
         [Display(Name = "Şifre")]
         [Required(ErrorMessage = "Şifreyi giriniz...!")]
         public string Password { get; set; }
+
+        [Display(Name = "Beni Hatırla")]
+        public bool RememberMe { get; set; } = true;
+
     }
 }
